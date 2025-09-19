@@ -62,10 +62,10 @@ const Header = () => {
 
                 <li className="nav-logo">
                   <Link
-                    href="/"
-                    scroll={false}
+                    href='#hero'
+                    scroll={true}
                     className={clsx(
-                      "max-lg:hidden transition-transform duration-500 cursor-pointer"
+                      "max-lg:hidden transition-transform duration-500 cursor-pointer scroll-smooth"
                     )}
                   >
                     <Image

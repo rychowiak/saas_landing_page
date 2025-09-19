@@ -1,17 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/sections/Header";
 import Hero from "@/sections/Hero";
 import Features from "@/sections/features";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import {ReactLenis} from "@/utils/lenis"
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const fontSans = Plus_Jakarta_Sans({
+  variable: "--font-sans",
   subsets: ["latin"],
 });
 
@@ -27,12 +24,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Header />
-        <Hero />
-        <Features />
-        {children}
-      </body>
+      <ReactLenis root options={{
+        lerp: 0.07
+      }}>
+        <body className={`${fontSans.variable} scroll-smooth`}>
+          <Header />
+          <Hero />
+          <Features />
+          {children}
+        </body>
+      </ReactLenis>
     </html>
   );
 }
