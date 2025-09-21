@@ -27,7 +27,10 @@ const Header = () => {
 
   const NavLink = ({ title = "" }) => (
     <Link
-      onClick={() => lenis?.scrollTo(`#${title}`, { lerp: 0.1 })}
+      onClick={() => {
+        lenis?.scrollTo(`#${title}`, { lerp: 0.1 })
+        setIsOpen(false)
+      }}
       href="/"
       scroll={false}
       className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5"
