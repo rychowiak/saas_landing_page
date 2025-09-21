@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/sections/Header";
 import Hero from "@/sections/Hero";
 import Features from "@/sections/features";
+import Pricing from "@/sections/pricing";
 
 import {ReactLenis} from "@/utils/lenis"
 
@@ -31,6 +32,7 @@ export default function RootLayout({
           <Header />
           <Hero />
           <Features />
+          <Pricing />
           {children}
         </body>
       </ReactLenis>
