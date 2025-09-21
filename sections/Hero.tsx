@@ -1,12 +1,16 @@
+'use client'
+
 import Button from "@/components/Button";
+import { useLenis } from "lenis/react";
 import Image from "next/image";
 import Link from "next/link";
 import * as React from "react";
 
 const Hero = () => {
+  const lenis = useLenis();
   return (
     <section
-      className="relative pt-60 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 mx-md:pb-32"
+      className="relative pt-48 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 mx-md:pb-32"
       id="hero"
     >
       <div className="element">
@@ -22,7 +26,11 @@ const Hero = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatum quasi velit aperiam quos ipsam.
             </p>
-            <Link href={"/"}>
+            <Link
+              onClick={() => lenis?.scrollTo("#features", { lerp: 0.1 })}
+              href={"/"}
+              scroll={false}
+            >
               <Button icon={"./images/zap.svg"}>Try it now</Button>
             </Link>
           </div>

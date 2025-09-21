@@ -25,6 +25,17 @@ const Header = () => {
     };
   }, []);
 
+  const NavLink = ({ title = "" }) => (
+    <Link
+      onClick={() => lenis?.scrollTo(`#${title}`, { lerp: 0.1 })}
+      href="/"
+      scroll={false}
+      className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5"
+    >
+      {title}
+    </Link>
+  );
+
   return (
     <header
       className={clsx(
@@ -32,14 +43,18 @@ const Header = () => {
         hasScrolled && "py-2 bg-black-100 backdrop-blur-[8px]"
       )}
     >
+      {/* mobile navbar */}
       <div className="container flex h-14 items-center max-lg:px-5">
-        <a className="lg:hidden flex-1 cursor-pointer z-2">
+        <a
+          onClick={() => lenis?.scrollTo("#hero", { lerp: 0.1 })}
+          className="lg:hidden flex-1 cursor-pointer z-2"
+        >
           <Image
             priority
             alt="logo"
             src={"./images/xora.svg"}
             width={155}
-            height={55}
+            height={155}
           />
         </a>
 
@@ -53,19 +68,9 @@ const Header = () => {
             <nav className="max-lg:relative max-lg:z-2 max-lg:my-auto">
               <ul className="flex max-lg:block max-lg:px-12">
                 <li className="nav-li">
-                  <Link
-                    href="/"
-                    className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5"
-                  >
-                    features
-                  </Link>
+                  <NavLink title="features" />
                   <div className="dot" />
-                  <Link
-                    href="/"
-                    className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5"
-                  >
-                    pricing
-                  </Link>
+                  <NavLink title="pricing" />
                 </li>
 
                 <li className="nav-logo">
@@ -73,33 +78,21 @@ const Header = () => {
                     onClick={() => lenis?.scrollTo("#hero", { lerp: 0.1 })}
                     href=""
                     scroll={false}
-                    className={clsx(
-                      "max-lg:hidden transition-transform duration-500 cursor-pointer scroll-smooth"
-                    )}
+                    className="max-lg:hidden transition-transform duration-500 cursor-pointer"
                   >
                     <Image
                       alt="logo"
                       src={"./images/xora.svg"}
                       width={160}
-                      height={55}
+                      height={160}
                     />
                   </Link>
                 </li>
 
                 <li className="nav-li">
-                  <Link
-                    href="/"
-                    className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5"
-                  >
-                    faq
-                  </Link>
+                  <NavLink title="faq" />
                   <div className="dot" />
-                  <Link
-                    href="/"
-                    className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5"
-                  >
-                    download
-                  </Link>
+                  <NavLink title="download" />
                 </li>
               </ul>
             </nav>
@@ -125,6 +118,7 @@ const Header = () => {
             </div>
           </div>
         </div>
+        {/* toggle menu button */}
         <button
           className="relative lg:hidden z-2 size-10 border-2 border-s4/25 rounded-full flex justify-center items-center"
           onClick={() => setIsOpen((prevState) => !prevState)}
