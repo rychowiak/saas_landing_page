@@ -28,7 +28,7 @@ export default function RootLayout({
       <ReactLenis root options={{
         lerp: 0.07
       }}>
-        <body className={`${fontSans.variable} scroll-smooth`}>
+        <body className={`${fontSans.variable} scroll-smooth overflow-hidden`}>
           <Header />
           <Hero />
           <Features />
