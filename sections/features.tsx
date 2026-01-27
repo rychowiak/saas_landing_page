@@ -46,8 +46,8 @@ const Features = () => {
                     <Image
                       src={icon}
                       alt={title}
-                      width={100}
-                      height={100}
+                      width={200}
+                      height={200}
                       className="size-17/20 object-contain z-20"
                     />
                   </div>

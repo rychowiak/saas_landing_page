@@ -93,3 +93,66 @@ export const plans = [
     logo: "/images/plan-3.png",
   },
 ];
+
+export const faq = [
+  {
+    id: "0",
+    question: "How easy is it to setup Xora?",
+    answer:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo accusamus, laboriosam distinctio omnis quis delectus quia quod modi sunt. Omnis voluptatibus vitae mollitia ad totam odio harum! Amet, dolores necessitatibus!",
+  },
+  {
+    id: "1",
+    question: "Can I integrate Xora with other platforms?",
+    answer:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo accusamus, laboriosam distinctio omnis quis delectus quia quod modi sunt. Omnis voluptatibus vitae mollitia ad totam odio harum! Amet, dolores necessitatibus!",
+  },
+  {
+    id: "2",
+    question: "How often do you add new content?",
+    answer:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo accusamus, laboriosam distinctio omnis quis delectus quia quod modi sunt. Omnis voluptatibus vitae mollitia ad totam odio harum! Amet, dolores necessitatibus!",
+  },
+  {
+    id: "3",
+    question: "What your refund policy?",
+    answer:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo accusamus, laboriosam distinctio omnis quis delectus quia quod modi sunt. Omnis voluptatibus vitae mollitia ad totam odio harum! Amet, dolores necessitatibus!",
+  },
+  {
+    id: "4",
+    question: "Do you have corporate plans?",
+    answer:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo accusamus, laboriosam distinctio omnis quis delectus quia quod modi sunt. Omnis voluptatibus vitae mollitia ad totam odio harum! Amet, dolores necessitatibus!",
+  },
+  {
+    id: "5",
+    question: "What happens when I’m out of storage?",
+    answer:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo accusamus, laboriosam distinctio omnis quis delectus quia quod modi sunt. Omnis voluptatibus vitae mollitia ad totam odio harum! Amet, dolores necessitatibus!",
+  },
+  {
+    id: "6",
+    question: "Can I upgrade my plan?",
+    answer:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo accusamus, laboriosam distinctio omnis quis delectus quia quod modi sunt. Omnis voluptatibus vitae mollitia ad totam odio harum! Amet, dolores necessitatibus!",
+  },
+  {
+    id: "7",
+    question: "How do I invite my team?",
+    answer:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo accusamus, laboriosam distinctio omnis quis delectus quia quod modi sunt. Omnis voluptatibus vitae mollitia ad totam odio harum! Amet, dolores necessitatibus!",
+  },
+  {
+    id: "8",
+    question: "Do you offer training for individuals and teams?",
+    answer:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo accusamus, laboriosam distinctio omnis quis delectus quia quod modi sunt. Omnis voluptatibus vitae mollitia ad totam odio harum! Amet, dolores necessitatibus!",
+  },
+  {
+    id: "9",
+    question: "I’m locked out of my account what do I do?",
+    answer:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo accusamus, laboriosam distinctio omnis quis delectus quia quod modi sunt. Omnis voluptatibus vitae mollitia ad totam odio harum! Amet, dolores necessitatibus!",
+  },
+];

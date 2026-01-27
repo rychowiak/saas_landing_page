@@ -3,10 +3,11 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/sections/Header";
 import Hero from "@/sections/Hero";
-import Features from "@/sections/features";
-import Pricing from "@/sections/pricing";
+import Features from "@/sections/Features";
+import Pricing from "@/sections/Pricing";
+import Faq from "@/sections/Faq";
 
-import {ReactLenis} from "@/utils/lenis"
+import { ReactLenis } from "@/utils/lenis";
 
 const fontSans = Plus_Jakarta_Sans({
   variable: "--font-sans",
@@ -25,14 +26,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <ReactLenis root options={{
-        lerp: 0.07
-      }}>
+      <ReactLenis
+        root
+        options={{
+          lerp: 0.07,
+        }}
+      >
         <body className={`${fontSans.variable} scroll-smooth overflow-hidden`}>
           <Header />
           <Hero />
           <Features />
           <Pricing />
+          <Faq />
           {children}
         </body>
       </ReactLenis>
