@@ -8,6 +8,7 @@ import Pricing from "@/sections/Pricing";
 import Faq from "@/sections/Faq";
 
 import { ReactLenis } from "@/utils/lenis";
+import Testimonials from "@/sections/Testimonials";
 
 const fontSans = Plus_Jakarta_Sans({
   variable: "--font-sans",
@@ -38,6 +39,7 @@ export default function RootLayout({
           <Features />
           <Pricing />
           <Faq />
+          <Testimonials />
           {children}
         </body>
       </ReactLenis>
