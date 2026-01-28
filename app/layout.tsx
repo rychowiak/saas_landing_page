@@ -6,9 +6,10 @@ import Hero from "@/sections/Hero";
 import Features from "@/sections/Features";
 import Pricing from "@/sections/Pricing";
 import Faq from "@/sections/Faq";
+import Testimonials from "@/sections/Testimonials";
+import Download from "@/sections/Download";
 
 import { ReactLenis } from "@/utils/lenis";
-import Testimonials from "@/sections/Testimonials";
 
 const fontSans = Plus_Jakarta_Sans({
   variable: "--font-sans",
@@ -40,6 +41,7 @@ export default function RootLayout({
           <Pricing />
           <Faq />
           <Testimonials />
+          <Download />
           {children}
         </body>
       </ReactLenis>
